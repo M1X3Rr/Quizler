@@ -1,0 +1,75 @@
+{
+  "questions": [
+    {//1
+      "question": "What is the largest ocean on Earth?",
+      "options": [ "a) Atlantic Ocean", "b) Indian Ocean", "c) Southern Ocean", "d) Pacific Ocean" ],
+      "correct_answer": "d"
+    },
+
+    {//2
+      "question": "Who painted the Mona Lisa?",
+      "options": [ "a) Vincent van Gogh", "b) Pablo Picasso", "c) Leonardo da Vinci", "d) Claude Monet" ],
+      "correct_answer": "c"
+    },
+
+    {//3
+      "question": "What is the capital of Japan?",
+      "options": [ "a) Seoul", "b) Tokyo", "c) Beijing", "d) Bangkok" ],
+      "correct_answer": "b"
+    },
+
+    {//4
+      "question": "Which element has the chemical symbol 'O'?",
+      "options": [ "a) Oxygen", "b) Gold", "c) Silver", "d) Uranium" ],
+      "correct_answer": "a"
+    },
+
+    {//5
+      "question": "Who wrote 'To Kill a Mockingbird'?",
+      "options": [ "a) J.K. Rowling", "b) Harper Lee", "c) George Orwell", "d) F. Scott Fitzgerald" ],
+      "correct_answer": "b"
+    },
+
+    {//6
+      "question": "What is the largest desert in the world?",
+      "options": [ "a) Sahara Desert", "b) Gobi Desert", "c) Antarctica", "d) Arabian Desert" ],
+      "correct_answer": "c"
+    },
+
+    {//7
+      "question": "Who is known as the father of modern physics?",
+      "options": [ "a) Isaac Newton", "b) Albert Einstein", "c) Galileo Galilei", "d) Nikola Tesla" ],
+      "correct_answer": "b"
+    },
+
+    {//8
+      "question": "What is the chemical symbol for iron?",
+      "options": [ "a) Fe", "b) Ir", "c) In", "d) Io" ],
+      "correct_answer": "a"
+    },
+
+    {//9
+      "question": "Which planet is known as the 'Red Planet'?",
+      "options": [ "a) Venus", "b) Mars", "c) Jupiter", "d) Saturn" ],
+      "correct_answer": "b"
+    },
+
+    {//10
+      "question": "Who is the author of the Harry Potter series?",
+      "options": [ "a) J.R.R. Tolkien", "b) J.K. Rowling", "c) C.S. Lewis", "d) Roald Dahl" ],
+      "correct_answer": "b"
+    },
+
+    {//11
+      "question": "What is the capital of Australia?",
+      "options": [ "a) Sydney", "b) Melbourne", "c) Canberra", "d) Perth" ],
+      "correct_answer": "c"
+    },
+
+    {//12
+      "question": "What is the tallest mountain in the world?",
+      "options": [ "a) Mount Kilimanjaro", "b) Mount Everest", "c) K2", "d) Mount Fuji" ],
+      "correct_answer": "b"
+    }
+  ]
+} 

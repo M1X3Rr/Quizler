@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zadanie2.MainPage">
+
+    <Frame BackgroundColor="#20124d">
+
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+
+            <Frame x:Name="QuestionsFrame" IsVisible="False">
+                <Label x:Name="QuestionLabel" FontSize="25" Text="{Binding Question}" />
+            </Frame>
+
+            <Button x:Name="StartButton" Text="Star the Queez" FontSize="25"
+                    Clicked="StartButton_Clicked"/>
+
+            <StackLayout x:Name="Choises" IsEnabled="False" IsVisible="False" 
+                             Margin="0, 40, 0, 0" HorizontalOptions="StartAndExpand">
+
+                <Image Source="Close_enough.gif" x:Name="CloseEnoughGif" IsVisible="false"
+                       HorizontalOptions="Center" HeightRequest="150" />
+                <Image Source="grumpygif.gif" x:Name="BedGif" IsVisible="False"
+                       HorizontalOptions="Center" HeightRequest="150" />
+                <Image Source="squid_dance.gif" x:Name="GoodGif" IsVisible="False"
+                       HorizontalOptions="Center" HeightRequest="150" />
+
+                <Grid x:Name="Answers" ColumnDefinitions="50*, 50*, 50*, 50*" ColumnSpacing="20" WidthRequest="500">
+                    <RadioButton x:Name="AnswerA" Grid.Column="0" Content="" GroupName="Answer"/>
+                    <RadioButton x:Name="AnswerB" Grid.Column="1" Content="" GroupName="Answer"/>
+                    <RadioButton x:Name="AnswerC" Grid.Column="2" Content="" GroupName="Answer"/>
+                    <RadioButton x:Name="AnswerD" Grid.Column="3" Content="" GroupName="Answer"/>
+                </Grid>
+
+                <Frame x:Name="Resoults" IsVisible="false" WidthRequest="500">
+                    <StackLayout>
+                        <Grid ColumnDefinitions="20*, 20*" ColumnSpacing="5">
+                            <Label Grid.Column="0" Text="Correct Answers:" HorizontalOptions="Center" FontSize="25"/>
+                            <Label Grid.Column="1" Text="False Answers:" HorizontalOptions="Center" FontSize="25"/>
+                        </Grid>
+                        <Grid ColumnDefinitions="20*, 20*" ColumnSpacing="5">
+                            <Label x:Name="CorrectAnswersLabel" Grid.Column="0" Text="n" HorizontalOptions="Center" FontSize="25"/>
+                            <Label x:Name="FalseAnswersLabel" Grid.Column="1" Text="n" HorizontalOptions="Center" FontSize="25"/>
+                        </Grid>
+
+                        <Label Text="Total:" HorizontalOptions="Center" FontSize="25" Margin="0, 50, 0, 0"/>
+                        <Label x:Name="TotalLabel" Text="n" HorizontalOptions="Center" FontSize="25"/>
+                    </StackLayout>
+                </Frame>
+
+                <Button x:Name="NextButton" Text="Next" FontSize="25"
+                        Clicked="NextButton_Clicked" Margin="0, 25, 0, 0"/>
+                
+                <Grid x:Name="EndResetGrid" ColumnDefinitions="50*, 50*" ColumnSpacing="50" IsVisible="false">
+                    <Button x:Name="RestartButton"  Text="Restart" FontSize="25"
+                        Clicked="RestartButton_Clicked" Margin="0, 25, 0, 0"
+                            Grid.Column="0" BackgroundColor="#6C906C" />
+
+                    <Button x:Name="EndButton" Text="End" FontSize="25"
+                        Clicked="EndButton_Clicked" Margin="0, 25, 0, 0"
+                            Grid.Column="1" BackgroundColor="#cc0000" />
+                </Grid>
+
+            </StackLayout>
+
+        </StackLayout>
+    </Frame>
+
+</ContentPage>
